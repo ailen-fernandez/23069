@@ -1,0 +1,9 @@
+    *{
+        font-family: 'Alkatra', cursive;
+    }
+h1{
+    color:red;
+    text-transform: uppercase;
+}
+/*import es bloqueante, si no se carga lo primero de la cascada se rompe no aparece no se imprime
+es recomendable link para que no se bloquee*/

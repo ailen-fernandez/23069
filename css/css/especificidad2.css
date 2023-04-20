@@ -1,0 +1,80 @@
+/*selector universal*/
+* {
+    /*color:red;*/
+    /* quitar los margenes*/
+    padding:0px;
+    margin:0px;
+
+}
+/*selector de tipo*/
+h1 {
+    color:green;
+}
+/*selector de clase*/
+.h1{
+    color:blue !important;
+
+}
+/*selector por id*/
+#h1{
+    color:blueviolet;
+}
+/*modelo de caja*/
+.container{
+    background-color: orangered;
+    border:5px solid black;
+    
+    padding:25px;
+
+   /* margin-top:30px;
+    margin-right:45px;
+    margin-bottom:25px;
+    margin-left:20px;*/ /*------ solo corre lo marcado hacia el margen izquierdo*/
+
+   /* box-sizing: content-box; ---  el width y height NO incluyen el margin,bording, padding*/
+    box-sizing: border-box; /*box-sizing: -box; -- asi se achica*/
+
+    /* la caja de la imagen vale la medida normal + el pading+border+margin*/
+    /* el div mide 250 - el border - padding - border - margen */
+} 
+.container-v2{
+    border:1px solid red;
+    margin-left:5px;
+    margin-right: 25px;
+
+    padding-left:15px;
+    padding-top:5px;
+    padding-bottom:2px;
+    /*elementos inline no pueden tener ancho y alto, es decir que no tienen padding*/
+    /*elementos bloque ocupan el 100% del espacio tienen ancho y alto*/
+}
+/*esto de abajo es un SELECTOR DESCENDIENTE*/
+.container-v2 a {
+    display:block;
+    /*margin:5px;*/
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    margin-bottom:5px;
+
+}
+/* accedo a "a" container y al atributo de ese "a" */
+ .container-v2 a[href='https://www.google.com']{
+    font-size: 30px;
+ }
+ /*SELECTORES HERMANOS
+    ^=: comience con
+    *=contenga tal cosa
+    ~=
+    $=:termine coincidir con tal cosa
+
+ 
+ el ^ lo que hace es agregar a aquellos que comienzan en este caso con
+ li, le agrega los cambios de la estructura de abajo
+ 
+ */
+ li [id*='sta'] {
+    background-color: blue;
+    color:white;
+
+ }

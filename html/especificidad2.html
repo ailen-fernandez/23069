@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- IMPORTANTE: para que se vean los estilos de css debo linkear la pagina y poner el STYLESHEET-->
+    <link rel="stylesheet" href="../css/especificidad2.css">
+</head>
+<body>
+    <section>
+        
+        <!-- linkeo la clase de h1 creada en css-->
+        <h1 class="h1" 
+        id="h1"
+        style="color:brown"> 
+        Repaso css Especificidad</h1>
+        <!--deberia tomar el de arriba el color brown, pero como en css puse en la clase .h1 en el blue !important , va a ser prioridad ese color-->
+        
+        <h1> Repaso 2 css Especificidad</h1>
+    </section>
+
+   <section>
+        <h2>Modelo de caja </h2>
+        <div class="container">
+            <img  width="220px" height="220px" src="../imagenes/simpson.jpg"> 
+        </div> 
+
+    </section>
+    <section class="container-v2">
+        <h2> box moding</h2>
+        <p>repaso de modelo de caja</p>
+
+        <a> Link 1</a>
+
+        <a href="https://google.com/">Link 2 </a>
+    </section>
+
+    <section>
+        <h3>LISTADO</h3>
+        <ul>
+           <li id="li1">
+                A
+           </li> 
+           <li id="il2">  
+                B
+           </li>
+           <li id='il3'>
+                C
+           </li>
+        </ul>
+    </section>
+</body>
+</html>
